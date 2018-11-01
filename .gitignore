@@ -1,6 +1,14 @@
-.DS_Store
 *.pyc
+*.py~
+.DS_Store
+conf.py
+locale
+latest_updates.json
+.wnf-lang-status
 *.egg-info
-*.swp
-tags
+dist/
 tmc_erpnext/docs/current
+*.swp
+*.swo
+__pycache__
+*~

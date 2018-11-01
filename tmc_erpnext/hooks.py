@@ -16,6 +16,8 @@ app_license = "GPL"
 
 fixtures = ["Custom Field"]
 
+hide_in_installer = True
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/tmc_erpnext/css/tmc_erpnext.css"
 # app_include_js = "/assets/tmc_erpnext/js/tmc_erpnext.js"
