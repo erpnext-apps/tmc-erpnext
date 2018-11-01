@@ -1,0 +1,47 @@
+<style>
+	.print-format {
+		padding: 4mm;
+		font-size: 8.0pt !important;
+		font-family: Tahoma, sans-serif;
+	}
+	.print-format.landscape {
+		max-width: 14.69in;
+	}
+
+	table { 
+		page-break-inside:auto 
+		}
+	tr{ 
+		page-break-inside:avoid; 
+		page-break-after:auto 
+	}
+	thead { 
+		display:table-header-group 
+	}
+	tfoot { 
+		display:table-footer-group 
+	}
+</style>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			{% for column in columns %}
+				<th>{%= __(column) %}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in data %}
+			<tr>
+				{% for value in row %}
+					{% if value %}
+						<td>{%= value %}</td>
+					{% else %}
+						<td></td>
+					{% endif %}
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>

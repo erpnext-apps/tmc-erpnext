@@ -1,2 +1,7 @@
-# tmc-erpnext
-Customizations for TMC ERPNext Instance
+## TMC ERPNext
+
+ERPNext extensions to cater customizations of TMC
+
+#### License
+
+GPL
